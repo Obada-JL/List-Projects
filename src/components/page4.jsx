@@ -8,6 +8,7 @@ import Modal from "react-modal";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./styles.css";
+import "./page4.css";
 function Page4() {
   const products = [
     {
@@ -68,7 +69,7 @@ function Page4() {
   };
   return (
     <div>
-      <h2>Contact Page4</h2>
+      <h2 className="paragraphhh">Contact Page4</h2>
       <div>
         <h2>Title For Paragraph</h2>
         <p style={{ fontSize: "22px" }} className="text-start ps-5 pe-5 mb-5">

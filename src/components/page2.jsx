@@ -8,6 +8,7 @@ import Modal from "react-modal";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./styles.css";
+import "./page2.css";
 function Page2() {
   const products = [
     {

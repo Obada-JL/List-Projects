@@ -4,10 +4,12 @@ import { useState } from "react";
 import image1 from "../assets/photo 1.jpg";
 import image2 from "../assets/photo2.jpg";
 import image3 from "../assets/photo3.jpg";
+import imagetest from "../assets/photo.png";
 import Modal from "react-modal";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./styles.css";
+import "./page1.css";
 function Page1() {
   const products = [
     {
@@ -15,8 +17,8 @@ function Page1() {
       title: "Mens Casual Premium Slim Fit T-Shirts",
       description: "High quality casual slim fit t-shirts for men.",
       modalTitle: "Image Carousel",
-      images: [image1, image2, image3],
-      modalTexts: ["modal text1", "modal text2", "modal text3"],
+      images: [image1, image2, image3, imagetest],
+      modalTexts: ["modal text1", "modal text2"],
     },
     {
       mainImage: image2,
@@ -50,6 +52,14 @@ function Page1() {
       images: [image1, image2, image3],
       modalTexts: ["modal5 text1", "modal text2", "modal text3"],
     },
+    {
+      mainImage: image2,
+      title: "product 6",
+      description: "High quality ",
+      modalTitle: "ICarousel",
+      images: [image1, image2, image3],
+      modalTexts: ["modal6 text1", "modal text2", "modal text3"],
+    },
   ];
 
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -68,7 +78,7 @@ function Page1() {
   };
   return (
     <div>
-      <h2> Page1</h2>
+      <h2>Page1</h2>
       <div>
         <h2>Title For Paragraph</h2>
         <p style={{ fontSize: "22px" }} className="text-start ps-5 pe-5 mb-5">

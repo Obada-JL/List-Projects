@@ -283,7 +283,7 @@ function App() {
         { path: "/", element: <HomePage /> },
         {
           element: <Page1 />,
-          path: "/page1",
+          path: "/page",
         },
         {
           element: <Page2 />,
